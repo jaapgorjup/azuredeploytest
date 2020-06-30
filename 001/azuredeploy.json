@@ -46,7 +46,7 @@
       "apiVersion": "2014-06-01",
       "name": "[parameters('hostingPlanName')]",
       "type": "Microsoft.Web/serverFarms",
-      "location": "[parameters('siteLocation')]",
+      "location": "[parameters('siteLocation001')]",
       "properties": {
         "name": "[parameters('hostingPlanName')]",
         "sku": "[parameters('sku')]",
@@ -58,7 +58,7 @@
       "apiVersion": "2014-06-01",
       "name": "[parameters('siteName')]",
       "type": "Microsoft.Web/Sites",
-      "location": "[parameters('siteLocation')]",
+      "location": "[parameters('siteLocation001')]",
       "dependsOn": [
         "[concat('Microsoft.Web/serverFarms/', parameters('hostingPlanName'))]"
       ],
